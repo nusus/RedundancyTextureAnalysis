@@ -87,3 +87,5 @@ ENV/
 
 # Rope project settings
 .ropeproject
+/RedundancyTextureAnalysis/.vs/RedundancyTextureAnalysis/v14
+/RedundancyTextureAnalysis/RedundancyTextureAnalysis.pyproj
