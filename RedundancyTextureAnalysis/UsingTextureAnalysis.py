@@ -67,7 +67,7 @@ class UsingTextureAnalysis(object):
                 for row in csvReader:
                     if(len(row) > 1 ):
                         command = row[1]
-                        id = self.__verifyCommand(command, row[0])
+                        id = self.__VerifyCommand(command, row[0])
                         if(id):
                             usingTextueList.append(id)
                     
@@ -75,7 +75,7 @@ class UsingTextureAnalysis(object):
             print("Analyze Command File Failed " + fileName + " is not a file")
         return usingTextueList
 
-    def __verifyCommand(self, command, commandOrder):
+    def __VerifyCommand(self, command, commandOrder):
         ret = []
         patternStr = r'glBindTexture\( target =GL_TEXTURE_2D  texture =(\d+)\)'
         pattern = re.compile(patternStr)
